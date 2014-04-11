@@ -16,10 +16,14 @@ nodejs:
 
 ## Distribution
 
-  band distributes work (not just tcp or http server) to a process on every available core of your server.
+### default
+
+  By default, band distributes work (not just tcp or http server) to a process on every available core of your server.
 
 ```js
 band(function() {
 	//do something
 });
 ```
+
+  band automatically fork a worker when a death occurs.
