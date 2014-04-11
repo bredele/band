@@ -1,7 +1,8 @@
 var band = require('..');
+var worker = require('./worker');
 
 band(function() {
-	console.log('haha');
+	worker();
 }, 10);
 
 // break my computer
