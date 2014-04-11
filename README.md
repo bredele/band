@@ -37,6 +37,7 @@ if (cluster.isMaster) {
 
 } else {
   // do something in worker process
+  // such as creating a http server
 }
 ```
 
@@ -44,7 +45,8 @@ and here's how to do the same thing with band:
 
 ```js
 band(function() {
-	//do something 
+	//do something
+
 });
 ```
 
