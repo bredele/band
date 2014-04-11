@@ -14,7 +14,8 @@
 
 ## Distribution
 
-  According the nodejs doc, a `worker` created by a cluster is is a process spawned using `child_process.fork` which can share sockets with other workers.
+  According the nodejs doc, a `worker` created by a cluster is is a process spawned using `child_process.fork` which can share sockets with other workers. You could decide to create 
+  a tcp server or not, the implementation should be the same.
 
 ### default
 
